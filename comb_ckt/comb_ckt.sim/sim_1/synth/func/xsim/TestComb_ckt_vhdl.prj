@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"TestComb_ckt_func_synth.vhd" \
+"../../../../../comb_ckt.srcs/sim_1/new/TestComb_ckt.vhd" \
+
+# Do not sort compile order
+nosort

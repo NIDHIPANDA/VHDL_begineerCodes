@@ -1,0 +1,6 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/comb_ckt/comb_ckt.srcs/sources_1/new/combCkt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity ORgate
+INFO: [VRFC 10-307] analyzing entity ANDGATE
+INFO: [VRFC 10-307] analyzing entity combCkt
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/comb_ckt/comb_ckt.srcs/sim_1/new/TestComb_ckt.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TestComb_ckt

@@ -1,0 +1,3 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/comb_ckt/comb_ckt.sim/sim_1/synth/timing/xsim/TestComb_ckt_time_synth.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module combCkt
+INFO: [VRFC 10-311] analyzing module glbl

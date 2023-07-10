@@ -1,0 +1,13 @@
+#-----------------------------------------------------------
+# Webtalk v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu May 11 01:26:07 2023
+# Process ID: 15400
+# Current directory: E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/comb_ckt/comb_ckt.sim/sim_1/synth/timing/xsim
+# Command line: wbtcv.exe -mode batch -source E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/comb_ckt/comb_ckt.sim/sim_1/synth/timing/xsim/xsim.dir/TestComb_ckt_time_synth/webtalk/xsim_webtalk.tcl -notrace
+# Log file: E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/comb_ckt/comb_ckt.sim/sim_1/synth/timing/xsim/webtalk.log
+# Journal file: E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/comb_ckt/comb_ckt.sim/sim_1/synth/timing/xsim\webtalk.jou
+#-----------------------------------------------------------
+source E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/comb_ckt/comb_ckt.sim/sim_1/synth/timing/xsim/xsim.dir/TestComb_ckt_time_synth/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Thu May 11 01:26:08 2023...

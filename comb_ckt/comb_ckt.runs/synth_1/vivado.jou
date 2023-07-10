@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Thu May 11 00:50:37 2023
+# Process ID: 11648
+# Current directory: E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/comb_ckt/comb_ckt.runs/synth_1
+# Command line: vivado.exe -log combCkt.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source combCkt.tcl
+# Log file: E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/comb_ckt/comb_ckt.runs/synth_1/combCkt.vds
+# Journal file: E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/comb_ckt/comb_ckt.runs/synth_1\vivado.jou
+#-----------------------------------------------------------
+source combCkt.tcl -notrace

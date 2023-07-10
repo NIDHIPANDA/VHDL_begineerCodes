@@ -1,0 +1,1 @@
+-wto "057c7fc5b38643588a18582e0ae730ca" --incr --debug "typical" --relax --mt "2" -L "xil_defaultlib" -L "secureip" --snapshot "TestComb_ckt_func_synth" "xil_defaultlib.TestComb_ckt" -log "elaborate.log" 
