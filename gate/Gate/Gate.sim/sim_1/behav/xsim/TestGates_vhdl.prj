@@ -1,0 +1,13 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../Gate.srcs/sources_1/imports/new/NANDgate.vhd" \
+"../../../../Gate.srcs/sources_1/imports/new/NORgate.vhd" \
+"../../../../Gate.srcs/sources_1/imports/new/ORgate.vhd" \
+"../../../../Gate.srcs/sources_1/imports/new/XNORgate.vhd" \
+"../../../../Gate.srcs/sources_1/imports/new/andGate.vhd" \
+"../../../../Gate.srcs/sources_1/imports/new/inverter.vhd" \
+"../../../../Gate.srcs/sources_1/imports/new/xorGate.vhd" \
+"../../../../Gate.srcs/sim_1/imports/new/TestGates.vhd" \
+
+# Do not sort compile order
+nosort

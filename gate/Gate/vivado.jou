@@ -1,0 +1,54 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Mon Jul 10 15:25:44 2023
+# Process ID: 24960
+# Current directory: E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent23108 E:\RESEARCH\NidhiProject_Work\FPGAcode\vhdlByExample\gate\Gate\Gate.xpr
+# Log file: E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/vivado.log
+# Journal file: E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/Gate.xpr
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1
+add_files -norecurse -scan_for_includes {E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/orGate.srcs/sources_1/new/NORgate.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/orGate.srcs/sources_1/new/NANDgate.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/orGate.srcs/sources_1/new/ORgate.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/orGate.srcs/sources_1/new/andGate.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/orGate.srcs/sources_1/new/inverter.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/orGate.srcs/sources_1/new/xorGate.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/orGate.srcs/sources_1/new/XNORgate.vhd}
+import_files -norecurse {E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/orGate.srcs/sources_1/new/NORgate.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/orGate.srcs/sources_1/new/NANDgate.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/orGate.srcs/sources_1/new/ORgate.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/orGate.srcs/sources_1/new/andGate.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/orGate.srcs/sources_1/new/inverter.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/orGate.srcs/sources_1/new/xorGate.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/orGate.srcs/sources_1/new/XNORgate.vhd}
+update_compile_order -fileset sources_1
+update_compile_order -fileset sources_1
+export_ip_user_files -of_objects  [get_files E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/Gate.srcs/sources_1/new/NANDgate.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/Gate.srcs/sources_1/new/NORgate.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/Gate.srcs/sources_1/new/ORgate.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/Gate.srcs/sources_1/new/XNORgate.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/Gate.srcs/sources_1/new/andGate.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/Gate.srcs/sources_1/new/inverter.vhd] -no_script -reset -force -quiet
+export_ip_user_files -of_objects  [get_files E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/Gate.srcs/sources_1/new/xorGate.vhd] -no_script -reset -force -quiet
+remove_files  {E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/Gate.srcs/sources_1/new/NANDgate.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/Gate.srcs/sources_1/new/NORgate.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/Gate.srcs/sources_1/new/ORgate.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/Gate.srcs/sources_1/new/XNORgate.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/Gate.srcs/sources_1/new/andGate.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/Gate.srcs/sources_1/new/inverter.vhd E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/Gate.srcs/sources_1/new/xorGate.vhd}
+export_ip_user_files -of_objects  [get_files E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/Gate.srcs/sim_1/new/TestGates.vhd] -no_script -reset -force -quiet
+remove_files  -fileset sim_1 E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/Gate.srcs/sim_1/new/TestGates.vhd
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+add_files -fileset sim_1 -norecurse -scan_for_includes E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/orGate.srcs/sim_1/new/TestGates.vhd
+import_files -fileset sim_1 -norecurse E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/Gate/orGate.srcs/sim_1/new/TestGates.vhd
+update_compile_order -fileset sim_1
+update_compile_order -fileset sim_1
+launch_simulation
+open_wave_config E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/TestGates_behav.wcfg
+source TestGates.tcl
+close_sim
+launch_simulation
+open_wave_config E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/gate/TestGates_behav.wcfg
+source TestGates.tcl
+close_sim
+close_project
+open_project E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/comb_ckt/comb_ckt.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/FlipFlop/FlipFlop.xpr
+update_compile_order -fileset sources_1
+close_project
+open_project E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Sequential_ckt/Sequential_ckt.xpr
+update_compile_order -fileset sources_1
