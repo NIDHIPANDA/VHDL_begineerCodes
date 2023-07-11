@@ -1,0 +1,66 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri May 26 10:52:18 2023
+# Process ID: 12604
+# Current directory: E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14164 E:\RESEARCH\NidhiProject_Work\FPGAcode\vhdlByExample\Comb_ckt_all\Comb_ckt_all.xpr
+# Log file: E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/vivado.log
+# Journal file: E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.xpr
+update_compile_order -fileset sources_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TBmux [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source TBmux.tcl
+close_sim
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_LUT [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source TB_LUT.tcl
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd w ]
+add_files -fileset sim_1 E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top Tb_adder [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source Tb_adder.tcl
+add_bp {E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd} 33
+relaunch_sim
+remove_bps -file {E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd} -line 33
+run all
+close_sim
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_comparator.vhd w ]
+add_files -fileset sim_1 E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_comparator.vhd
+update_compile_order -fileset sim_1
+# Disabling source management mode.  This is to allow the top design properties to be set without GUI intervention.
+set_property source_mgmt_mode None [current_project]
+set_property top TB_comparator [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+# Re-enabling previously disabled source management mode.
+set_property source_mgmt_mode All [current_project]
+update_compile_order -fileset sim_1
+launch_simulation
+source TB_comparator.tcl
+close_sim

@@ -1,0 +1,314 @@
+#-----------------------------------------------------------
+# Vivado v2018.2 (64-bit)
+# SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+# IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+# Start of session at: Fri May 26 10:52:18 2023
+# Process ID: 12604
+# Current directory: E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent14164 E:\RESEARCH\NidhiProject_Work\FPGAcode\vhdlByExample\Comb_ckt_all\Comb_ckt_all.xpr
+# Log file: E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/vivado.log
+# Journal file: E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/xilinxVivado2021/Vivado/2018.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:29 . Memory (MB): peak = 790.977 ; gain = 71.527
+update_compile_order -fileset sources_1
+set_property top TBmux [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TBmux' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TBmux_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '4' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinxVivado2021/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 67d1ae46f55648388cc4a17494c0a171 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TBmux_behav xil_defaultlib.TBmux -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:05 . Memory (MB): peak = 838.383 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '5' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TBmux_behav -key {Behavioral:sim_1:Functional:TBmux} -tclbatch {TBmux.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TBmux.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+xsim: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 852.762 ; gain = 14.379
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TBmux_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:07 ; elapsed = 00:00:17 . Memory (MB): peak = 852.762 ; gain = 14.379
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+close_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 859.477 ; gain = 0.000
+set_property top TB_LUT [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_LUT' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_LUT_vhdl.prj"
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinxVivado2021/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 67d1ae46f55648388cc4a17494c0a171 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_LUT_behav xil_defaultlib.TB_LUT -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+INFO: [XSIM 43-4323] No Change in HDL. Linking previously generated obj files to create kernel
+INFO: [USF-XSim-69] 'elaborate' step finished in '3' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_LUT_behav -key {Behavioral:sim_1:Functional:TB_LUT} -tclbatch {TB_LUT.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TB_LUT.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_LUT_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:06 . Memory (MB): peak = 859.477 ; gain = 0.000
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd w ]
+add_files -fileset sim_1 E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd
+update_compile_order -fileset sim_1
+set_property top Tb_adder [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Tb_adder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Tb_adder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sources_1/new/adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity adder
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Tb_adder
+WARNING: [VRFC 10-2116] signal n is used in subtype-indication/type-definition [E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd:17]
+WARNING: [VRFC 10-2116] signal n is used in subtype-indication/type-definition [E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd:18]
+WARNING: [VRFC 10-2116] signal n is used in subtype-indication/type-definition [E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd:20]
+INFO: [USF-XSim-69] 'compile' step finished in '1' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinxVivado2021/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 67d1ae46f55648388cc4a17494c0a171 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Tb_adder_behav xil_defaultlib.Tb_adder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal n [E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd:17]
+WARNING: [VRFC 10-1625] value in initialization depends on signal n [E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd:18]
+WARNING: [VRFC 10-1625] value in initialization depends on signal n [E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd:20]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.adder [adder_default]
+Compiling architecture adder1 of entity xil_defaultlib.tb_adder
+Built simulation snapshot Tb_adder_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim/xsim.dir/Tb_adder_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri May 26 15:38:55 2023...
+run_program: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 867.633 ; gain = 0.000
+INFO: [USF-XSim-69] 'elaborate' step finished in '7' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "Tb_adder_behav -key {Behavioral:sim_1:Functional:Tb_adder} -tclbatch {Tb_adder.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source Tb_adder.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'Tb_adder_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:02 ; elapsed = 00:00:11 . Memory (MB): peak = 878.828 ; gain = 11.195
+add_bp {E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd} 33
+relaunch_sim
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'Tb_adder' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj Tb_adder_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity Tb_adder
+WARNING: [VRFC 10-2116] signal n is used in subtype-indication/type-definition [E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd:17]
+WARNING: [VRFC 10-2116] signal n is used in subtype-indication/type-definition [E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd:18]
+WARNING: [VRFC 10-2116] signal n is used in subtype-indication/type-definition [E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd:20]
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinxVivado2021/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 67d1ae46f55648388cc4a17494c0a171 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot Tb_adder_behav xil_defaultlib.Tb_adder -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+WARNING: [VRFC 10-1625] value in initialization depends on signal n [E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd:17]
+WARNING: [VRFC 10-1625] value in initialization depends on signal n [E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd:18]
+WARNING: [VRFC 10-1625] value in initialization depends on signal n [E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd:20]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_unsigned
+Compiling architecture behavioral of entity xil_defaultlib.adder [adder_default]
+Compiling architecture adder1 of entity xil_defaultlib.tb_adder
+Built simulation snapshot Tb_adder_behav
+INFO: [USF-XSim-69] 'elaborate' step finished in '2' seconds
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+Stopped at time : 20 ns : File "E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd" Line 33
+relaunch_sim: Time (s): cpu = 00:00:01 ; elapsed = 00:00:09 . Memory (MB): peak = 881.336 ; gain = 0.000
+remove_bps -file {E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_adder.vhd} -line 33
+run all
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+set_property SOURCE_SET sources_1 [get_filesets sim_1]
+close [ open E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_comparator.vhd w ]
+add_files -fileset sim_1 E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_comparator.vhd
+update_compile_order -fileset sim_1
+set_property top TB_comparator [get_filesets sim_1]
+set_property top_lib xil_defaultlib [get_filesets sim_1]
+update_compile_order -fileset sim_1
+launch_simulation
+INFO: [Vivado 12-5682] Launching behavioral simulation in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+INFO: [SIM-utils-51] Simulation object is 'sim_1'
+INFO: [SIM-utils-54] Inspecting design source files for 'TB_comparator' in fileset 'sim_1'...
+INFO: [USF-XSim-97] Finding global include files...
+INFO: [USF-XSim-98] Fetching design files from 'sim_1'...
+INFO: [USF-XSim-2] XSim::Compile design
+INFO: [USF-XSim-61] Executing 'COMPILE and ANALYZE' step in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+"xvhdl --incr --relax -prj TB_comparator_vhdl.prj"
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sources_1/new/comprator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity comp
+INFO: [VRFC 10-163] Analyzing VHDL file "E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.srcs/sim_1/new/TB_comparator.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity TB_comparator
+INFO: [USF-XSim-69] 'compile' step finished in '2' seconds
+INFO: [USF-XSim-3] XSim::Elaborate design
+INFO: [USF-XSim-61] Executing 'ELABORATE' step in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+Vivado Simulator 2018.2
+Copyright 1986-1999, 2001-2018 Xilinx, Inc. All Rights Reserved.
+Running: D:/xilinxVivado2021/Vivado/2018.2/bin/unwrapped/win64.o/xelab.exe -wto 67d1ae46f55648388cc4a17494c0a171 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot TB_comparator_behav xil_defaultlib.TB_comparator -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling architecture behavioural of entity xil_defaultlib.comp [comp_default]
+Compiling architecture behavioral of entity xil_defaultlib.tb_comparator
+Built simulation snapshot TB_comparator_behav
+
+****** Webtalk v2018.2 (64-bit)
+  **** SW Build 2258646 on Thu Jun 14 20:03:12 MDT 2018
+  **** IP Build 2256618 on Thu Jun 14 22:10:49 MDT 2018
+    ** Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.
+
+source E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim/xsim.dir/TB_comparator_behav/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-206] Exiting Webtalk at Fri May 26 15:47:13 2023...
+INFO: [USF-XSim-69] 'elaborate' step finished in '4' seconds
+INFO: [USF-XSim-4] XSim::Simulate design
+INFO: [USF-XSim-61] Executing 'SIMULATE' step in 'E:/RESEARCH/NidhiProject_Work/FPGAcode/vhdlByExample/Comb_ckt_all/Comb_ckt_all.sim/sim_1/behav/xsim'
+INFO: [USF-XSim-98] *** Running xsim
+   with args "TB_comparator_behav -key {Behavioral:sim_1:Functional:TB_comparator} -tclbatch {TB_comparator.tcl} -log {simulate.log}"
+INFO: [USF-XSim-8] Loading simulator feature
+Vivado Simulator 2018.2
+Time resolution is 1 ps
+source TB_comparator.tcl
+# set curr_wave [current_wave_config]
+# if { [string length $curr_wave] == 0 } {
+#   if { [llength [get_objects]] > 0} {
+#     add_wave /
+#     set_property needs_save false [current_wave_config]
+#   } else {
+#      send_msg_id Add_Wave-1 WARNING "No top level signals found. Simulator will start without a wave window. If you want to open a wave window go to 'File->New Waveform Configuration' or type 'create_wave_config' in the TCL console."
+#   }
+# }
+# run 1000ns
+INFO: [USF-XSim-96] XSim completed. Design snapshot 'TB_comparator_behav' loaded.
+INFO: [USF-XSim-97] XSim simulation ran for 1000ns
+launch_simulation: Time (s): cpu = 00:00:01 ; elapsed = 00:00:10 . Memory (MB): peak = 885.789 ; gain = 3.758
+close_sim
+INFO: [Simtcl 6-16] Simulation closed
+exit
+INFO: [Common 17-206] Exiting Vivado at Fri May 26 22:03:40 2023...
